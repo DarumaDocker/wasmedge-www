@@ -12,10 +12,21 @@
 	 ========================================================================== */
 
 html {
-	color: #222;
+	color: #292929;
 	font-family:'Blinker', Tahoma, Verdana, sans-serif;
-	font-size: 1em;
+	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.4;
+	background-color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #292929;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 /*
@@ -72,6 +83,11 @@ video {
 
 fieldset {
 	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+figure {
 	margin: 0;
 	padding: 0;
 }

@@ -3,14 +3,14 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>WasmEdge</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:title" content="">
 	<meta property="og:type" content="">
 	<meta property="og:url" content="">
-	<meta property="og:image" content="img/wasm-edge-runtime-horizontal-color.png">
+	<meta property="og:image" content="img/wasmedge-runtime-horizontal-color.png">
 
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="icon.png">
@@ -19,26 +19,91 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/index.css">
 
 	<meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+	<nav class="fixed">
+		<div class="dimmed flex justify-between items-center">
+			<figure class="logo">
+				<img src="img/wasmedge-horizontal-white.svg" alt="WasmEdge Logo" />
+			</figure>
+			<div class="nav-menu">
+				<a href="" class="nav-menu-item">Docs</a>
+				<a href="" class="nav-menu-item">Community</a>
+				<a href="" class="nav-menu-item">About</a>
+			</div>
+		</div>
+	</nav>
 
-	<h1>WasmEdge</h1>
-	<!-- Add your site or application content here -->
-	<p>Hello world! This is HTML5 Boilerplate.</p>
+	<div class="hero">
+		<div class="dimmed glimpse">
+			<h1>WasmEdge</h1>
+			<div class="slogan">An open source cloud native WebAssembly Runtime for edge computing.</div>
+			<div class="hero-btns flex">
+				<a href="" class="btn">Get Started</a>
+				<a href="" class="btn wire-btn">Github</a>
+			</div>
+		</div>
+
+		<div class="dimmed dimmer brief flex justify-between">
+			<div class="wasm-snippet flex relative">
+				<div class="wasm-snippet-trail">
+					<pre><code>(module
+  (type (;0;) (func (param i32) (result i32)))
+  (func $fib (type 0) (param $n i32) (result i32)
+    local.get $n
+    i32.const 2
+    i32.lt_s
+    if  ;; label = @1
+      i32.const 1
+      return
+    end
+    local.get $n
+    i32.const 2
+    i32.sub
+    call $fib
+    local.get $n
+    i32.const 1
+    i32.sub
+    call $fib
+    i32.add
+    return)
+  (export "fib" (func $fib)))</code></pre>
+				</div>
+        <figure class="snippet-trail-line absolute">
+          <img src="img/trail-line.svg" />
+        </figure>
+			</div>
+
+			<div class="explain-icon flex flex-col items-end">
+				<figure class="wasmedge-in-cloud">
+					<img src="img/wasmedge-in-cloud.svg" />
+				</figure>
+        <div class="explain-text ">
+          <p>The WebAssembly program can be compiled from multi-language and embeded in many edge devices with small footprint, high performance, memory safety, sandbox securty.</p>
+          <p>WasmEdge is responsible for ensuring its performance and securty and providing many exclusive extensions and APIs.</p>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <div class="features">
+    
+  </div>
+
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 
-	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	<script>
+	<!-- script>
 		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 		ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
 	</script>
-	<script src="https://www.google-analytics.com/analytics.js" async></script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script -->
 </body>
 
 </html>
