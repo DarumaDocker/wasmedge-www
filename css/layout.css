@@ -1,3 +1,9 @@
+.full {
+	width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .dimmed {
     width: 72.5rem;
     margin: 0 auto;
@@ -19,6 +25,46 @@
     position: relative;
 }
 
+.sticky {
+    position: sticky;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.z-4 {
+    z-index: 4;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.z-6 {
+    z-index: 6;
+}
+
+.z-7 {
+    z-index: 7;
+}
+
+.z-8 {
+    z-index: 8;
+}
+
+.z-9 {
+    z-index: 9;
+}
+
 .flex {
     display: flex;
 }
@@ -31,8 +77,16 @@
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .items-center {
     align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
 }
 
 .items-end {

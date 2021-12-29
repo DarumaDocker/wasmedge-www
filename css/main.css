@@ -25,6 +25,11 @@ a {
 	color: #292929;
 }
 
+ul, li, dd, dt {
+	margin: 0;
+	padding: 0;
+}
+
 * {
 	box-sizing: border-box;
 }

@@ -16,12 +16,12 @@ nav {
 	margin-left: 3em;
 }
 
+/**************************
+ * hero
+ */
 .hero {
-	width: 80rem;
-	margin: 4rem auto 0 auto;
-	background: url(../img/cloud.png),
-		linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(97,0,255,1) 100%);
-	background-position: center 0;
+	margin-top: 4rem;
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(97,0,255,1) 100%);
 }
 
 .glimpse {
@@ -118,3 +118,277 @@ h1 {
 	width: 38rem;
 	margin-top: 4rem;
 }
+/**************************
+ * hero end
+ */
+
+
+/**************************
+ * features
+ */
+.features-catalog {
+	top: 0;
+	background-color: #fff;
+	width: 40%;
+	height: 100vh;
+	min-height: 38.875rem;
+}
+
+.features-catalog ul li {
+	padding: 0;
+	margin: 1rem 0;
+	list-style: none;
+	font-size: 1.125rem;
+}
+
+.features-catalog ul li.active {
+	list-style-image: url(../img/list-triangle.svg);
+}
+
+.features-content {
+	width: 60%;
+}
+
+.feature-detail {
+	height: 100vh;
+	min-height: 38.875rem;
+	padding: 0 5rem;
+	font-size: 2.25rem;
+	color: #fff;
+}
+
+.feature-detail ul {
+	padding-left: 2.5rem;
+}
+/**************************
+ * features end
+ */
+
+
+/**************************
+ * partners
+ */
+.partners {
+	padding: 7rem 0;
+	background-color: #fff;
+}
+.partner-text {
+	width: 38rem;
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+.parterns-gallery:not(:first-child) {
+	margin-top: 3rem;
+}
+.parterns-gallery img[alt="OpenYurt"] {
+	width: 12.3125rem;
+}
+.parterns-gallery img[alt="KubeEdge"] {
+	width: 12.5rem;
+}
+.parterns-gallery img[alt="SuperEdge"] {
+	width: 14.208125rem;
+}
+.parterns-gallery img[alt="Linkerd"] {
+	width: 15.1875rem;
+}
+.parterns-gallery img[alt="Suborbital"] {
+	width: 19.5625rem;
+	margin-left: -0.625rem;
+}
+.parterns-gallery img[alt="Kubernetes"] {
+	width: 19.25rem;
+}
+.parterns-gallery img[alt="Docker"] {
+	width: 12.0625rem;
+}
+.parterns-gallery img[alt="Dapr"] {
+	width: 6.375rem;
+}
+/**************************
+ * partners end
+ */
+
+
+/**************************
+ * news
+ */
+.news {
+	background-color: #eee;
+	padding: 7rem 0;
+}
+
+.news h2 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin: 0 0 5rem;
+}
+
+.news-article {
+	width: 30%;
+}
+
+.article-date {
+	font-size: 1.125rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.article-title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	width: 16rem;
+	margin-bottom: 1.5rem;
+}
+
+.article-summary {
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+}
+
+.article-link a {
+	font-weight: 300;
+	color: #2570df;
+}
+.article-link a:hover {
+	text-decoration: underline;
+}
+
+/**************************
+ * news end
+ */
+
+
+/**************************
+ * fulfill
+ */
+.fulfill {
+	background-color: #000;
+	padding: 7rem 0;
+	color: #fff;
+}
+
+.fulfill h2 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin: 0 0 5rem;
+}
+
+.fulfill-content {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.fulfill-content p {
+	margin: 1rem 0;
+}
+
+.fulfill-content p a {
+	color: #74acff;
+}
+.fulfill-content p a:hover {
+	text-decoration: underline;
+}
+
+.wasmedge-sdk-lang {
+	margin-top: 2rem;
+}
+
+.wasmedge-sdk-lang a {
+	height: 2.625rem;
+	line-height: 2.625rem;
+	background-color: #fff;
+	border-radius: 3.125rem;
+	padding: 0 0.75rem;
+	font-size: 1.125rem;
+	font-weight: 300;
+	letter-spacing: 0.125rem;
+	margin-right: 3rem;
+}
+
+.wasmedge-sdk-lang a span {
+	letter-spacing: 0;
+}
+/**************************
+ * fulfill end
+ */
+
+
+/**************************
+ * cncf
+ */
+.cncf {
+	height: 16.875rem;
+	background: linear-gradient(135deg, rgba(243, 161, 185,1) 0%, rgba(183, 59, 186,1) 100%);
+}
+
+.cncf-announce {
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.cncf img[alt="CNCF"] {
+	width: 16.0615rem;
+}
+/**************************
+ * cncf end
+ */
+
+
+/**************************
+ * footer
+ */
+.footer {
+	padding: 5rem 0;
+}
+
+.footer-logo img {
+	width: 24.75rem;
+}
+
+.footer-entries:not(:first-child) {
+	margin-left: 5rem;
+}
+
+.footer-entries dt {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.footer-entries dd {
+	margin-bottom: 0.5rem;
+}
+
+.footer-entries dd a {
+	font-size: 1.125rem;
+	font-weight: 300;
+	color: #eee;
+}
+
+.footer-entries dd a:hover {
+	text-decoration: underline;
+}
+/**************************
+ * footer end
+ */
+
+
+/**************************
+ * copyright
+ */
+.copyright {
+	padding-bottom: 3rem;
+	background-color: #000;
+	color: #aaa;
+	font-weight: 300;
+}
+.copyright p {
+	margin: 0.1rem 0;
+}
+/**************************
+ * copyright end
+ */
