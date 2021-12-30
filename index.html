@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="css/index.css">
 
 	<meta name="theme-color" content="#fafafa">
+
+	<script src="js/pre.js"></script>
 </head>
 
 <body>
@@ -42,8 +44,8 @@
 	</nav>
 
 	<div class="hero full relative z-2">
-		<figure class="cloud absolute">
-			<img src="img/cloud.png" />
+		<figure class="cloud absolute flex justify-center">
+			<img src="img/cloud.svg" />
 		</figure>
 		<div class="dimmed glimpse relative">
 			<h1>WasmEdge</h1>
@@ -97,16 +99,18 @@
 	</div>
 
 	<div class="features full flex">
-		<div class="features-catalog sticky flex justify-center items-center">
-			<ul>
-				<li class="active"><a href="#feature-embed">Easy to embed into a host application</a></li>
-				<li><a href="#feature-extensible">Easy extensibility</a></li>
-				<li><a href="#feature-javascript">JavaScript Support</a></li>
-				<li><a href="#feature-aot">High-performance (based on LLVM AOT)</a></li>
-				<li><a href="#feature-extension">WASI-like Extensions</a></li>
-				<li><a href="#feature-management">Cloud native management and orchestration</a></li>
-				<li><a href="#feature-platform">Cross-platform support</a></li>
-			</ul>
+		<div class="features-catalog-bg">
+			<div class="features-catalog sticky flex justify-center items-center">
+				<ul>
+					<li class="active"><a href="#feature-embed">Easy to embed into a host application</a></li>
+					<li><a href="#feature-extensible">Easy extensibility</a></li>
+					<li><a href="#feature-javascript">JavaScript Support</a></li>
+					<li><a href="#feature-aot">High-performance (based on LLVM AOT)</a></li>
+					<li><a href="#feature-extension">WASI-like Extensions</a></li>
+					<li><a href="#feature-management">Cloud native management and orchestration</a></li>
+					<li><a href="#feature-platform">Cross-platform support</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="features-content">
 			<div id="feature-embed" class="feature-detail flex justify-center items-center">
@@ -196,7 +200,7 @@
 
 	<div class="fulfill full">
 		<div class="dimmed">
-			<h2>Get hands dirty</h2>
+			<h2>Let's get hands dirty!</h2>
 			<div class="fulfill-content">
 				<p>You can install WasmEdge with only <a href="">one single command</a></p>
 				<p>Want to explore more with WasmEdge, Go to the WasmEdge <a href="">Book</a></p>
@@ -248,8 +252,8 @@
 		<div class="dimmed flex justify-between">
 			<div class="footer-left">
 				<a href="https://wasmedge.org">
-					<figure class="footer-logo">
-						<img src="img/wasmedge-horizontal-white.svg" />
+					<figure class="footer-logo relative">
+						<img src="img/wasm-edge-runtime-horizontal-color.svg" alt="WasmEdge Logo" />
 					</figure>
 				</a>
 			</div>

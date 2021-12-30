@@ -16,12 +16,25 @@ nav {
 	margin-left: 3em;
 }
 
+.nav-logo img {
+	width: 12.375rem;
+}
+
 /**************************
  * hero
  */
 .hero {
 	margin-top: 4rem;
 	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(97,0,255,1) 100%);
+	overflow: hidden;
+	box-shadow: -6rem 2rem 6rem 2rem #230938;
+}
+
+.cloud {
+	width: 100%;
+}
+.cloud img {
+	width: 151.5625rem;
 }
 
 .glimpse {
@@ -64,7 +77,7 @@ h1 {
 }
 
 .brief {
-	padding: 4rem 0;
+	padding: 6rem 0;
 }
 
 .wasm-snippet {
@@ -112,6 +125,14 @@ h1 {
 	left: 21rem;
 }
 
+.snippet-trail-line img {
+	width: 26.6875rem;
+}
+
+.wasmedge-in-cloud img {
+	width: 16.3125rem;
+}
+
 .explain-text {
 	font-size: 1.25rem;
 	color: #fff;
@@ -126,23 +147,34 @@ h1 {
 /**************************
  * features
  */
+.features-catalog-bg {
+	height: 700vh;
+	background: #fff;
+	width: 40%;
+}
 .features-catalog {
 	top: 0;
-	background-color: #fff;
-	width: 40%;
 	height: 100vh;
 	min-height: 38.875rem;
 }
 
 .features-catalog ul li {
+	position: relative;
 	padding: 0;
 	margin: 1rem 0;
 	list-style: none;
 	font-size: 1.125rem;
 }
 
-.features-catalog ul li.active {
-	list-style-image: url(../img/list-triangle.svg);
+.features-catalog ul li.active::before {
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 0.25rem;
+	left: -2rem;
+	background: url(../img/circle.svg);
+	background-size: contain;
 }
 
 .features-content {
@@ -152,9 +184,13 @@ h1 {
 .feature-detail {
 	height: 100vh;
 	min-height: 38.875rem;
-	padding: 0 5rem;
+	padding: 0 5rem 0 8rem;
 	font-size: 2.25rem;
 	color: #fff;
+	background-image: url("data:image/svg+xml,%0A%3Csvg width='58' height='117' viewBox='0 0 58 117' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M58 58.5C58 90.8087 31.8087 117 -0.5 117V0C31.8087 0 58 26.1913 58 58.5Z' fill='white'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 3.65625rem 7.3125rem;
 }
 
 .feature-detail ul {
