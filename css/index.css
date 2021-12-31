@@ -177,6 +177,18 @@ h1 {
 	background-size: contain;
 }
 
+.features-catalog ul li a {
+	transition: all 0.5s;
+}
+
+.features-catalog ul li a:hover {
+	color: #842cdd;
+}
+
+.features-catalog ul li.active a {
+	color: #842cdd;
+}
+
 .features-content {
 	width: 60%;
 }
