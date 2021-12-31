@@ -10,10 +10,12 @@
         
         let htmlElem = document.querySelector('html');
         
-        if (winWidth > 240) {
-            let fontSize = winWidth / 1280 * 16;
-            htmlElem.style.fontSize = fontSize + 'px';
+        if (winWidth > 640) {
+            fontSize = winWidth / 1280 * 16;
+        } else {
+            fontSize = winWidth / 640 * 16;
         }
+        htmlElem.style.fontSize = fontSize + 'px';
     }
 
     resetBaseSize();
