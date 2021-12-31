@@ -496,7 +496,6 @@ h1 {
 	font-size: 0.875rem;
 	line-height: 2.75;
 	background-color: #727272;
-	overflow: scroll;
 	max-width: 100%;
 	white-space: nowrap;
 }
@@ -527,6 +526,9 @@ h1 {
 	}
 	.fulfill h2 {
 		margin-bottom: 3rem;
+	}
+	.wasmedge-install-command code {
+		overflow: scroll;
 	}
 }
 /**************************
