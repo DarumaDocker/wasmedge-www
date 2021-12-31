@@ -312,6 +312,45 @@ h1 {
 		list-style-position: inside;
 	}
 }
+
+
+@media only screen and (min-width: 640px) and (orientation: portrait) {
+	.features {
+		background-color: #fff;
+		padding: 4rem 0;
+	}
+
+	.m-feature-frame {
+		width: 45%;
+		background-color: #000;
+		color: #fff;
+		padding: 2rem 2rem 2rem 5rem;
+		border-radius: 1rem;
+		background-image: url("data:image/svg+xml,%0A%3Csvg width='58' height='117' viewBox='0 0 58 117' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M58 58.5C58 90.8087 31.8087 117 -0.5 117V0C31.8087 0 58 26.1913 58 58.5Z' fill='white'/%3E%3C/svg%3E%0A");
+		background-repeat: no-repeat;
+		background-position: center left;
+		background-size: 2.125rem 4.25rem;
+	}
+	
+	.m-feature-frame {
+		margin-top: 2rem;
+	}
+
+	.m-feature-title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 2rem;
+	}
+
+	.m-feature-detail {
+		font-size: 1.25rem;
+		font-weight: 300;
+	}
+
+	.m-feature-detail ul {
+		list-style-position: inside;
+	}
+}
 /**************************
  * features end
  */

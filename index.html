@@ -107,7 +107,7 @@
 	</div>
 
 	<div class="features full flex">
-		<div class="features-catalog-bg m:hide">
+		<div class="features-catalog-bg m:hide p:hide">
 			<div class="features-catalog sticky flex justify-center items-center">
 				<ul>
 					<li class="active"><a href="#feature-aot">High-performance(based on LLVM AOT)</a></li>
@@ -120,7 +120,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="features-content m:hide">
+		<div class="features-content m:hide  p:hide">
 			<div id="feature-aot" class="feature-detail flex justify-center items-center">
 				<div>
 					<p>Wasm is faster 100 times than Linux container at cold start-up time.</p>
@@ -170,7 +170,7 @@
 			</div>
 		</div>
 
-		<div class="m-features-gallery hide m:show dimmed m:flex m:flex-wrap m:justify-center">
+		<div class="m-features-gallery hide m:show p:show dimmed m:flex p:flex m:flex-wrap p:flex-wrap m:justify-center p:justify-around">
 			<div class="m-feature-frame">
 				<div class="m-feature-title">High-performance(based on LLVM AOT)</div>
 				<div class="m-feature-detail">
@@ -372,8 +372,6 @@
 		</div>
 	</div>
 
-	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
